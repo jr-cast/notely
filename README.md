@@ -30,6 +30,13 @@ Not familiar with node & npm, please visit:
 
 - https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
+### Getting started
+```
+npm install
+```
+```
+npm start
+```
 ## Authors
 
 :bust_in_silhouette: Jose Ramon
