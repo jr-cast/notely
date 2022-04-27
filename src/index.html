@@ -5,11 +5,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d2a3ee28df.js" crossorigin="anonymous"></script>
+  <title>TODO app</title>
 </head>
 
 <body>
-
+  <div class="wrapper">
+    <ul id="todolist">
+      <div id="heading">
+        <h3>Today's To Do</h3> <i class="fa-solid fa-rotate"></i>
+      </div>
+      <form id="inputForm">
+        <input id="input" type="text" placeholder="Add to your list...">
+        <i class="fa-solid fa-floppy-disk"></i>
+      </form>
+    </ul>
+    <div id="clear"><a href="#clear">Clear all completed</a></div>
+  </div>
 </body>
 
 </html>
