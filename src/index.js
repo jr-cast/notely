@@ -38,3 +38,6 @@ todos.updateTask();
 
 // remove items from localstorage and update index number
 todos.removeItemFromLocalStorage();
+
+// clear checked items 
+todos.clearList();

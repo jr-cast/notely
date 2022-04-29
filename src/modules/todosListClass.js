@@ -121,6 +121,8 @@ export default class TodosList {
         const stringData = JSON.stringify(filtered);
         localStorage.setItem('todoList', stringData);
         listedItem.remove();
+        this.UpdateList();
+        this.updateIndex();
         window.location.reload();
       }
     });
