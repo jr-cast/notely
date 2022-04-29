@@ -10,7 +10,7 @@ const input = document.getElementById('input');
 let stringData = JSON.stringify(todos.List);
 let listedItem;
 input.addEventListener('keydown', (evt) => {
-  if (evt.code === 'Enter') {
+  if (evt.code === 'Enter' && input.value !== '') {
     listedItem = new Item();
     listedItem.description = input.value;
     listedItem.index = `${todos.List.length + 1}`;
