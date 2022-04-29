@@ -90,10 +90,6 @@ input:placeholder-shown {
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
 }
 
-.fa-solid fa-ellipsis-vertical {
-  border: 1px solid black;
-}
-
 .item .task {
   width: 85%;
   margin: 0;
@@ -105,4 +101,8 @@ input:placeholder-shown {
 
 .hidden {
   display: none;
+}
+
+.strike {
+  text-decoration: line-through;
 }
