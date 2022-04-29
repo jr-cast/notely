@@ -106,3 +106,7 @@ input:placeholder-shown {
 .strike {
   text-decoration: line-through;
 }
+
+#clearA:hover {
+  font-weight: bolder;
+}
