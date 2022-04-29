@@ -102,10 +102,16 @@ export default class TodosList {
       document.getElementById(`check${i}`).addEventListener('change', () => {
         if (this.List[i].completed === false) {
           this.List[i].completed = true;
+          const stringData = JSON.stringify(this.List);
+          localStorage.setItem('todoList', stringData);
+          this.UpdateList();
           const task = document.getElementById(`task${i}`);
           task.style.textDecoration = 'line-through';
         } else if (this.List[i].completed === true) {
           this.List[i].completed = false;
+          const stringData = JSON.stringify(this.List);
+          localStorage.setItem('todoList', stringData);
+          this.UpdateList();
           const task = document.getElementById(`task${i}`);
           task.style.textDecoration = 'none';
         }
