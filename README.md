@@ -1,4 +1,4 @@
-# To Do list: Add and Remove ✔️!
+# To Do list: interactive list ✔️!
 
 Minimalist TODO app ES6 compliant and bundled with Webpack.
 
