@@ -14,7 +14,7 @@ module.exports = {
     }),
   ],
   output: {
-    filename: 'main.js',
+    filename: 'main_bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
