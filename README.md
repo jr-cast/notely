@@ -1,6 +1,6 @@
 # To Do list: interactive list ✔️!
 
-A minimalist TODO app, ES6 compliant and bundled with Webpack --> ![LIVE](https://jr-cast.github.io/todo-app/dist/)
+A minimalist TODO app, ES6 compliant and bundled with Webpack --> [LIVE VERSION HERE](https://jr-cast.github.io/todo-app/dist/)
 
 ![image](https://user-images.githubusercontent.com/58822719/165874818-3cd1d58b-3a89-40d0-b42e-7fb96229a1e8.png)
 
@@ -10,7 +10,7 @@ A minimalist TODO app, ES6 compliant and bundled with Webpack --> ![LIVE](https:
 - HTML
 - JavaScript
 - CSS
--Webpack
+- Webpack
 
 ## Prerequisites
 
