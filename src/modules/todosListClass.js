@@ -119,18 +119,18 @@ export default class TodosList {
     }
   }
 
-  clearList() {
+  clearCompleted() {
     document.getElementById('clearA').addEventListener('click', () => {
+      const filtered = this.List.filter((items) => items.completed === false);
+      const stringData = JSON.stringify(filtered);
       for (let i = 0; i < this.List.length; i += 1) {
         const listedItem = document.getElementById(`item${i}`);
-        const filtered = this.List.filter((items) => items.completed === false);
-        const stringData = JSON.stringify(filtered);
-        localStorage.setItem('todoList', stringData);
         listedItem.remove();
-        this.UpdateList();
-        this.updateIndex();
-        window.location.reload();
       }
+      localStorage.setItem('todoList', stringData);
+      this.UpdateList(); s
+      this.updateIndex();
+      this.listItems();
     });
   }
 }

@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const LicenseWebpackPlugin = require('license-webpack-plugin').LicenseWebpackPlugin;
 
 module.exports = {
   mode: 'development',
@@ -12,6 +13,7 @@ module.exports = {
       title: 'Output Management',
       template: './src/index.html',
     }),
+    new LicenseWebpackPlugin()
   ],
   output: {
     filename: 'main_bundle.js',

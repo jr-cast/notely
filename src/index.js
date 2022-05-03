@@ -40,4 +40,4 @@ todos.updateTask();
 todos.removeItemFromLocalStorage();
 
 // clear checked items
-todos.clearList();
+todos.clearCompleted();
