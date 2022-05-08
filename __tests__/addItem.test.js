@@ -1,22 +1,22 @@
-import TodosList from "../src/modules/todosListClass";
-import Item from "../src/modules/itemClass"
+import TodosList from '../src/modules/todosListClass.js';
+import Item from '../src/modules/itemClass.js';
 
 const todos = new TodosList();
 todos.List = [
   {
-    description: "Go to the Gym",
+    description: 'Go to the Gym',
     completed: false,
-    index: "1"
+    index: '1',
   },
   {
-    description: "Take Dog Out",
+    description: 'Take Dog Out',
     completed: false,
-    index: "2"
+    index: '2',
   },
   {
-    description: "LOL",
+    description: 'LOL',
     completed: false,
-    index: "3"
+    index: '3',
   }];
 
 document.body.innerHTML = '<div class="wrapper">'
@@ -25,7 +25,8 @@ document.body.innerHTML = '<div class="wrapper">'
   + '<h3>Today\'s To Do</h3>'
   + '<i class="fa-solid fa-rotate"></i>'
   + '</div>'
-  + '<form id="inputForm">' + '<input id="input" type="text" placeholder="Add to your list..." required>'
+  + '<form id="inputForm">'
+  + '<input id="input" type="text" placeholder="Add to your list..." required>'
   + '<i class="fa-solid fa-floppy-disk"></i>'
   + '</form>'
   + '</div >'
@@ -34,15 +35,16 @@ document.body.innerHTML = '<div class="wrapper">'
 
 describe('Add items', () => {
   test('Display items stored in localStorage', () => {
+    /* eslint-disable */
     document.body.innerHTML;
-    const input = document.getElementById('input');
     todos.listItems();
     const items = document.getElementsByClassName('task');
-    expect(items.length).toBe(3);;
+    expect(items.length).toBe(3);
   });
 
   test('Add item when Enter key is pressed', () => {
     document.body.innerHTML;
+    /* eslint-enable */
     const input = document.getElementById('input');
     input.value = 'IT WORKS!!';
     Event.code = 'Enter';

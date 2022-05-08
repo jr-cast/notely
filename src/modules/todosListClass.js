@@ -128,7 +128,7 @@ export default class TodosList {
         listedItem.remove();
       }
       localStorage.setItem('todoList', stringData);
-      this.UpdateList(); s
+      this.UpdateList();
       this.updateIndex();
       this.listItems();
     });
