@@ -8,7 +8,9 @@ body {
   justify-content: center;
   align-items: center;
   color: gray;
+  background-image: url("./assets/background.jpg");
 }
+
 
 #todolist {
   width: 100%;
@@ -27,12 +29,11 @@ body {
 
 #input {
   width: 90%;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
   margin: 0%;
   border: none;
-  font-size: 1.5em;
+  font-size: 2em;
   color: black;
   background-color: #E5D371;
 }
@@ -42,7 +43,6 @@ body {
 }
 
 #inputForm {
-  border-bottom: 1px solid lightgray;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -61,8 +61,6 @@ body {
   border: none;
   font-size: 1.2em;
   color: black;
-  border-bottom: 1px solid lightgray;
-  border: 2px solid red;
 }
 
 #heading {
@@ -71,6 +69,7 @@ body {
   align-items: center;
   border-bottom: 2px solid darkgray;
   width: 100%;
+  border-bottom: 2px solid black;
 }
 
 #heading h3 {
@@ -78,7 +77,6 @@ body {
   font-size: 5em;
   padding-top: 0.2em;
   margin: 0%;
-  /* border-bottom: 2px solid black; */
 }
 
 input:placeholder-shown {
@@ -88,10 +86,12 @@ input:placeholder-shown {
 #clear {
   width: 100%;
   text-align: center;
-  padding-bottom: 1em;
-  padding-top: 1em;
+  padding-bottom: 0.25em;
+  padding-top: 0.25em;
   color: black;
   background-color: lightgray;
+  font-size: 2.5em;
+  border-radius: 5px 5px 15px 15px;
 }
 
 #clear a {
@@ -105,7 +105,7 @@ input:placeholder-shown {
   height: 80%;
   width: 95%;
   background-color: #E5D371;
-  border-radius: 0 0 15px 15px;
+  border-radius: 5px 5px 15px 15px;
 }
 
 .item .task {
@@ -115,6 +115,8 @@ input:placeholder-shown {
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  background-color: #E5D371;
+  font-size: 1.25em;
 }
 
 .hidden {
@@ -127,4 +129,10 @@ input:placeholder-shown {
 
 #clearA:hover {
   font-weight: bolder;
+}
+
+.mainLoginInput::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: 'Reenie Beanie', cursive;
+  opacity: 1; /* Firefox */
+  font-size: 1.5em;
 }
