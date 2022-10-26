@@ -28,7 +28,7 @@ export default class TodosList {
       const task = document.createElement('input');
       task.type = 'text';
       task.className = 'task';
-      task.classList.add("mainLoginInput");
+      task.classList.add('mainLoginInput');
       task.id = `task${i}`;
       task.value = this.List[i].description;
       item.classList.toggle('item');

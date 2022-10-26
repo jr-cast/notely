@@ -31,7 +31,7 @@ body {
   border: none;
   font-size: 1.45em;
   color: black;
-  background-color: #FCFF97;
+  background-color: #fcff97;
 }
 
 #input:focus {
@@ -65,7 +65,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 3px solid #F2899E;
+  border-bottom: 3px solid #f2899e;
   width: 100%;
 }
 
@@ -89,7 +89,7 @@ input:placeholder-shown {
   padding-bottom: 0.25em;
   padding-top: 0.25em;
   color: black;
-  background-color: #F2899E;
+  background-color: #f2899e;
   font-size: 2em;
   border-radius: 5px 5px 15px 15px;
   margin-bottom: 0.5em;
@@ -121,10 +121,8 @@ input:placeholder-shown {
   width: 85%;
   margin: 0;
   border: none;
-  font-size: 1em;
-  font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  background-color: #FCFF97;
+  background-color: #fcff97;
   font-size: 1em;
 }
 
