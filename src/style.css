@@ -11,15 +11,12 @@ body {
   background-image: url("./assets/background.jpg");
 }
 
-
 #todolist {
   width: 100%;
   height: 90%;
-  /* background-color: white; */
   padding: 0%;
   list-style-type: none;
   margin: 0%;
-  /* background-color: #E5D371; */
 }
 
 #todolist h3 {
@@ -32,7 +29,7 @@ body {
   opacity: 0.75;
   margin: 0%;
   border: none;
-  font-size: 1.55em;
+  font-size: 1.45em;
   color: black;
   background-color: #FCFF97;
 }
@@ -46,6 +43,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 1.2em;
+  margin-left: 1em;
 }
 
 #inputForm i {
@@ -54,9 +52,9 @@ body {
 
 .item {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 1em;
+  padding: 0.25em;
   margin: 0%;
   border: none;
   font-size: 1.2em;
@@ -67,9 +65,8 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 2px solid darkgray;
+  border-bottom: 3px solid #F2899E;
   width: 100%;
-  border-bottom: 2px solid black;
 }
 
 #heading h3 {
@@ -84,42 +81,51 @@ input:placeholder-shown {
 }
 
 #clear {
-  width: 100%;
-  text-align: center;
+  width: 90%;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 0.25em;
   padding-top: 0.25em;
   color: black;
-  background-color: lightgray;
-  font-size: 2.5em;
+  background-color: #F2899E;
+  font-size: 2em;
   border-radius: 5px 5px 15px 15px;
+  margin-bottom: 0.5em;
 }
 
 #clear a {
   text-decoration: none;
   color: black;
+  font-size: 1.5em;
 }
 
 .wrapper {
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
-  border:2px solid black;
-  height: 80%;
-  width: 95%;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.2);
+  min-height: 80%;
+  max-height: 80%;
+  width: 360px;
   border-radius: 5px 5px 15px 15px;
   background-image: url("./assets/ASH91029_L.jpg");
   background-size: cover;
   background-position: center;
-  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .item .task {
+  font-family: 'Reenie Beanie', cursive;
   width: 85%;
   margin: 0;
   border: none;
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  background-color: #E5D371;
-  font-size: 1.25em;
+  background-color: #FCFF97;
+  font-size: 1em;
 }
 
 .hidden {
@@ -135,6 +141,12 @@ input:placeholder-shown {
 }
 
 .mainLoginInput::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: 'Reenie Beanie', cursive;
+  opacity: 1; /* Firefox */
+  font-size: 1.5em;
+}
+
+.mainLoginInput { /* Chrome, Firefox, Opera, Safari 10.1+ */
   font-family: 'Reenie Beanie', cursive;
   opacity: 1; /* Firefox */
   font-size: 1.5em;
