@@ -11,27 +11,6 @@ A minimalist note app, ES6 compliant and bundled with Webpack.
 - CSS
 - Webpack
 
-## Prerequisites
-
-### Setup
-
-- Set up a new repository and prepare it for development using best practices (e.g. linters).
-- Create a new branch according to the GitHub flow rules.
-- Add a .gitignore file.
-- Set up a linter for HTML and CSS and make sure that any files that are not relevant are ignored by git.
-
-- Add descriptive README file to your project
-
-### Install
-
-For instructions of how to install the required dependencies, please visit:
-
-- https://github.com/microverseinc/linters-config
-
-Not familiar with node & npm, please visit:
-
-- https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-
 ### Getting started
 ```
 npm install
