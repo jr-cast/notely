@@ -12,10 +12,10 @@ export default class TodosList {
   updateIndex() {
     for (let i = 0; i < this.List.length; i += 1) {
       this.List[i].index = i + 1;
-      const stringData = JSON.stringify(this.List);
-      localStorage.setItem('todoList', stringData);
-      this.UpdateList();
     }
+    const stringData = JSON.stringify(this.List);
+    localStorage.setItem('todoList', stringData);
+    this.UpdateList();
   }
 
   listItems() {

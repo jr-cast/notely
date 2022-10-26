@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Reenie Beanie', cursive;
   display: flex;
   flex-direction: column;
   height: 97vh;
@@ -9,13 +11,13 @@ body {
 }
 
 #todolist {
-  width: 35%;
-  min-width: 400px;
-  min-height: 25%;
+  width: 100%;
+  height: 90%;
   background-color: white;
   padding: 0%;
   list-style-type: none;
   margin: 0%;
+  background-color: #E5D371;
 }
 
 #todolist h3 {
@@ -30,7 +32,9 @@ body {
   padding-left: 1em;
   margin: 0%;
   border: none;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  color: black;
+  background-color: #E5D371;
 }
 
 #input:focus {
@@ -52,20 +56,29 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
   padding: 1em;
   margin: 0%;
   border: none;
   font-size: 1.2em;
   color: black;
   border-bottom: 1px solid lightgray;
+  border: 2px solid red;
 }
 
 #heading {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 2px solid darkgray;
+  width: 100%;
+}
+
+#heading h3 {
+  font-weight: bolder;
+  font-size: 5em;
+  padding-top: 0.2em;
+  margin: 0%;
+  /* border-bottom: 2px solid black; */
 }
 
 input:placeholder-shown {
@@ -88,6 +101,11 @@ input:placeholder-shown {
 
 .wrapper {
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
+  border:2px solid black;
+  height: 80%;
+  width: 95%;
+  background-color: #E5D371;
+  border-radius: 0 0 15px 15px;
 }
 
 .item .task {
